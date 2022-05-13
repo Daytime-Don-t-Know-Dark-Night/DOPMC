@@ -1,0 +1,59 @@
+name: 💡 立项
+description: 在DDKDN发起一个新的项目
+title: "这里写项目名称"
+assignees: 
+- 2951121599
+labels: "立项申请"
+body:
+- type: markdown
+  attributes:
+    value: |
+      🔥你在DDKDN发起的新项目, 方便我们了解你的项目, 请填写以下信息
+- type: textarea
+  id: description
+  attributes:
+    label: "项目简介"
+    description: "请对你的项目做个简单的介绍~"
+  validations:
+    required: true
+- type: textarea
+  id: motivation
+  attributes:
+    label: "立项理由"
+    description: "请描述一下你发起这个项目的理由~"
+  validations:
+    required: true
+- type: textarea
+  id: audience
+  attributes:
+    label: "项目受众"
+    description: "请描述一下这个项目所面向的受众~"
+  validations:
+    required: true
+- type: textarea
+  id: highlight
+  attributes:
+    label: "项目亮点"
+    description: "请描述一下你的项目亮点是什么？如果已有类似项目的话，那与其相比你的项目亮点又有哪些？"
+  validations:
+    required: true
+- type: textarea
+  id: plan
+  attributes:
+    label: "项目规划"
+    description: "请分别从内容、时间和人员三个方面描述一下你的项目规划~"
+  validations:
+    required: true
+- type: textarea
+  id: profile
+  attributes:
+    label: "项目负责人"
+    description: "请在下方填写项目负责人的GitHub主页链接以及联系方式~"
+  validations:
+    required: true
+- type: checkboxes
+  attributes:
+    label: "备注：发起立项申请后DOPMC将会在24小时之内给出答复，如超时未答复请添加DOPMC负责人微信（微信号：Taylor_29511）问询~"
+    options:
+    - label: "我已知悉上述备注"
+      required: true
